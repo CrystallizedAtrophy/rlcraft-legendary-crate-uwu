@@ -1,0 +1,548 @@
+NAME: "Legendary Vote Crate"
+ID: "legendary_vote_crate"
+CASE: {
+    TYPE: "BLOCK"
+    LOCATION: {
+        WORLD_NAME: "world"
+        X: x
+        Y: x
+        Z: x
+    }
+    START_PREVIEW_ON_LEFT_CLICK: false
+}
+KEY: {
+    TYPE: "ITEM"
+    ITEM: {
+          ITEM_TYPE: "minecraft:tripwire_hook"
+          QUANTITY: 1
+          DISPLAY_NAME: "&aLegendary Vote Key"
+          LORE: [
+              "Use this on the vote key at spawn",
+              "&cHOW DID YOU GET THIS!?"
+                ]
+             ENCHANTMENTS: [
+    {
+        ENCHANTMENT: "unbreaking"
+        LEVEL: 2
+    }
+]
+          }
+}
+OPEN_MANAGER: {
+    TYPE: "FIRST"
+    OPEN_SOUND: "block.anvil.use"
+    SCROLL_SOUND: "entity.firework.shoot"
+    WIN_SOUND: "entity.experience_orb.pickup"
+    DISPLAY_NAME: "&2Vote Crate"
+    DECORATIVE_ITEMS_CHANGE_MODE: {
+        TYPE: "RANDOM"
+        CHANGE_DELAY: 5
+        IGNORED_INDICES: [
+            4,
+            9,
+            10,
+            15
+        ]
+    }
+    DECORATIVE_ITEMS: [
+        {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 1
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 2
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 3
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 4
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 5
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 6
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 7
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 8
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 9
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 10
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 10
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 9
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 8
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 7
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 6
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 5
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 4
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 3
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 2
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 1
+        }
+    ]
+    SCROLL_DELAY: 10
+}
+
+PREVIEW: {
+    TYPE: "FIRST"
+    DISPLAY_NAME: "&2Legendary Vote Crate"
+    DECORATIVE_ITEMS: [
+        {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 1
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 2
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 3
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 4
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 5
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 6
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 7
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 8
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 9
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 10
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 10
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 9
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 8
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 7
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 6
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 5
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 4
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 3
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 2
+        }, {
+            ITEM_TYPE: "minecraft:stained_glass_pane"
+            SUB_ID: 1
+        }
+    ]
+    SCROLL_DELAY: 10
+}
+DROPS: [
+    {
+        TYPE: "MULTI"
+        ID: "minecraft:emerald_block"
+        LEVEL: 1
+        FAKE_LEVEL: 5
+        DROP_ITEM: {
+            ITEM_TYPE: "minecraft:emerald_block"
+        }
+        DROPS: [
+            {
+                TYPE: "ITEM"
+                ID: "minecraft:emerald_block"
+                ITEM: {
+                    ITEM_TYPE: "minecraft:emerald_block"
+		    QUANTITY: 32
+                }
+            }, {
+                TYPE: "COMMANDS"
+                ID: "minecraft:emerald_block"
+                COMMANDS: [ {
+                        COMMAND: "msg %PLAYER% Congratulations! You won 32 Emerald blocks!"
+                        CONSOLE: true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        TYPE: "MULTI"
+        ID: "xat:weightless_stone"
+        LEVEL: 2
+        FAKE_LEVEL: 5
+        DROP_ITEM: {
+            ITEM_TYPE: "xat:weightless_stone"
+        }
+        DROPS: [
+            {
+                TYPE: "ITEM"
+                ID: "xat:weightless_stone"
+                ITEM: {
+                    ITEM_TYPE: "xat:weightless_stone"
+		    QUANTITY: 1
+                }
+            }, {
+                TYPE: "COMMANDS"
+                ID: "xat:weightless_stone"
+                COMMANDS: [ {
+                        COMMAND: "msg %PLAYER% Congratulations! You won Stone of Negative Gravity!"
+                        CONSOLE: true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        TYPE: "MULTI"
+        ID: "iceandfire:dragonegg_sapphire"
+        LEVEL: 2
+        FAKE_LEVEL: 5
+        DROP_ITEM: {
+            ITEM_TYPE: "iceandfire:dragonegg_sapphire"
+        }
+        DROPS: [
+            {
+                TYPE: "ITEM"
+                ID: "iceandfire:dragonegg_sapphire"
+                ITEM: {
+                    ITEM_TYPE: "iceandfire:dragonegg_sapphire"
+		    QUANTITY: 1
+                }
+            }, {
+                TYPE: "COMMANDS"
+                ID: "iceandfire:dragonegg_sapphire"
+                COMMANDS: [ {
+                        COMMAND: "msg %PLAYER% Congratulations! You won a Sapphire Dragon Egg!"
+                        CONSOLE: true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        TYPE: "MULTI"
+        ID: "minecraft:nether_star"
+        LEVEL: 2
+        FAKE_LEVEL: 5
+        DROP_ITEM: {
+            ITEM_TYPE: "minecraft:nether_star"
+        }
+        DROPS: [
+            {
+                TYPE: "ITEM"
+                ID: "minecraft:nether_star"
+                ITEM: {
+                    ITEM_TYPE: "minecraft:nether_star"
+		    QUANTITY: 10
+                }
+            }, {
+                TYPE: "COMMANDS"
+                ID: "minecraft:nether_star"
+                COMMANDS: [ {
+                        COMMAND: "msg %PLAYER% Congratulations! You won 10 Nether stars!!"
+                        CONSOLE: true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        TYPE: "MULTI"
+        ID: "minecraft:stick"
+        LEVEL: 2
+        FAKE_LEVEL: 5
+        DROP_ITEM: {
+            ITEM_TYPE: "minecraft:stick"
+        }
+        DROPS: [
+            {
+                TYPE: "ITEM"
+                ID: "minecraft:stick"
+                ITEM: {
+                    ITEM_TYPE: "minecraft:stick"
+		    QUANTITY: 1
+		    DISPLAY_NAME: "&aRepellent Stick"
+		    LORE: [
+		"&aPoor little mole ratties! Causes them to be knockback and set on fire for 8 seconds.
+]
+		    ENCHANTMENTS: [
+		{
+			ENCHANTMENT: "advanced knockback"
+			LEVEL: 2
+		},
+		{
+			ENCHANTMENT: "fire aspect"
+			LEVEL: 2
+		}
+]
+                }
+            }, {
+                TYPE: "COMMANDS"
+                ID: "minecraft:stick"
+                COMMANDS: [ {
+                        COMMAND: "msg %PLAYER% Congratulations! You won a &aRepellent Stick!"
+                        CONSOLE: true
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        TYPE: "MULTI"
+        ID: "xat:inertia_null_stone"
+        LEVEL: 2
+        FAKE_LEVEL: 5
+        DROP_ITEM: {
+            ITEM_TYPE: "xat:inertia_null_stone"
+        }
+        DROPS: [
+            {
+                TYPE: "ITEM"
+                ID: "xat:inertia_null_stone"
+                ITEM: {
+                    ITEM_TYPE: "xat:inertia_null_stone"
+		    QUANTITY: 1
+                }
+            }, {
+                TYPE: "COMMANDS"
+                ID: "xat:inertia_null_stone"
+                COMMANDS: [ {
+                        COMMAND: "msg %PLAYER% Congratulations! You won a Stone of Inertia Null!"
+                        CONSOLE: true
+                    }
+                ]
+            }
+        ]
+    },
+        {
+        TYPE: "MULTI"
+        ID: "xat:greater_inertia_stone"
+        LEVEL: 2
+        FAKE_LEVEL: 5
+        DROP_ITEM: {
+            ITEM_TYPE: "xat:greater_inertia_stone"
+        }
+        DROPS: [
+            {
+                TYPE: "ITEM"
+                ID: "xat:greater_inertia_stone"
+                ITEM: {
+                    ITEM_TYPE: "xat:greater_inertia_stone"
+		    QUANTITY: 1
+                }
+            }, {
+                TYPE: "COMMANDS"
+                ID: "xat:greater_inertia_stone"
+                COMMANDS: [ {
+                        COMMAND: "msg %PLAYER% Congratulations! You won Stone of Greater Inertia!"
+                        CONSOLE: true
+                    }
+                ]
+            }
+        ]
+    },
+        {
+        TYPE: "MULTI"
+        ID: "variedcommodities:crown"
+        LEVEL: 2
+        FAKE_LEVEL: 5
+        DROP_ITEM: {
+            ITEM_TYPE: "variedcommodities:crown"
+        }
+        DROPS: [
+            {
+                TYPE: "ITEM"
+                ID: "variedcommodities:crown"
+                ITEM: {
+                    ITEM_TYPE: "variedcommodities:crown"
+		    QUANTITY: 1
+        DISPLAY_NAME: "&eYellow Party Hat"
+        LORE: [
+          "&2a &4nice &2hat &4from &2a &4cracker."
+]
+        ENCHANTMENTS: [
+          {
+            ENCHANTMENT: "curse of possession"
+            LEVEL: 1
+          },
+          {
+            ENCHANTMENT: "advanced protection"
+            LEVEL: 5
+          },
+          {
+            ENCHANTMENT: "respiration"
+            LEVEL: 3
+          },
+          {
+            ENCHANTMENT: "unbreaking"
+            LEVEL: 3
+          },
+          {
+            ENCHANTMENT: "mending"
+            LEVEL: 1
+          }
+        ]
+                }
+            }, {
+                TYPE: "COMMANDS"
+                ID: "variedcommodities:crown"
+                COMMANDS: [ {
+                        COMMAND: "msg %PLAYER% Congratulations! You won a &eYellow Party Hat!"
+                        CONSOLE: true
+                    }
+                ]
+            }
+        ]
+    },
+            {
+        TYPE: "MULTI"
+        ID: "variedcommodities:crown2"
+        LEVEL: 2
+        FAKE_LEVEL: 5
+        DROP_ITEM: {
+            ITEM_TYPE: "variedcommodities:crown2"
+        }
+        DROPS: [
+            {
+                TYPE: "ITEM"
+                ID: "variedcommodities:crown2"
+                ITEM: {
+                    ITEM_TYPE: "variedcommodities:crown2"
+		    QUANTITY: 1
+        DISPLAY_NAME: "&fWhite Party Hat"
+        LORE: [
+          "&2a &4nice &2hat &4from &2a &4cracker."
+]
+        ENCHANTMENTS: [
+          {
+            ENCHANTMENT: "curse of possession"
+            LEVEL: 1
+          },
+          {
+            ENCHANTMENT: "advanced protection"
+            LEVEL: 5
+          },
+          {
+            ENCHANTMENT: "respiration"
+            LEVEL: 3
+          },
+          {
+            ENCHANTMENT: "unbreaking"
+            LEVEL: 3
+          },
+          {
+            ENCHANTMENT: "mending"
+            LEVEL: 1
+          }
+        ]
+                }
+            }, {
+                TYPE: "COMMANDS"
+                ID: "variedcommodities:crown2"
+                COMMANDS: [ {
+                        COMMAND: "msg %PLAYER% Congratulations! You won a &fWhite Party Hat!"
+                        CONSOLE: true
+                    }
+                ]
+            }
+        ]
+    },
+      {
+        TYPE: "MULTI"
+        ID: "spartanfire:greatsword_ice_dragonbone"
+        LEVEL: 2
+        FAKE_LEVEL: 5
+        DROP_ITEM: {
+            ITEM_TYPE: "spartanfire:greatsword_ice_dragonbone"
+        }
+        DROPS: [
+            {
+                TYPE: "ITEM"
+                ID: "spartanfire:greatsword_ice_dragonbone"
+                ITEM: {
+                    ITEM_TYPE: "spartanfire:greatsword_ice_dragonbone"
+		    QUANTITY: 1
+        DISPLAY_NAME: "&bFrostmourne"
+        LORE: [
+          "&9It's a warning. It says, Whomsoever takes up this blade shall wield power eternal. Just as the blade rends flesh, so must power scar the spirit. Oh, I should've known. The blade is cursed!"
+]
+        ENCHANTMENTS: [
+          {
+            ENCHANTMENT: "curse of possession"
+            LEVEL: 1
+          },
+          {
+            ENCHANTMENT: "supreme sharpness"
+            LEVEL: 5
+          },
+          {
+            ENCHANTMENT: "unbreaking"
+            LEVEL: 3
+          },
+          {
+            ENCHANTMENT: "mortalitas"
+            LEVEL: 8
+          },
+          {
+            ENCHANTMENT: "freezing"
+            LEVEL: 3
+          },
+          {
+            ENCHANTMENT: "advanced looting"
+            LEVEL:3
+          }
+        ]
+                }
+            }, {
+                TYPE: "COMMANDS"
+                ID: "spartanfire:greatsword_ice_dragonbone"
+                COMMANDS: [ {
+                        COMMAND: "msg %PLAYER% Congratulations! You won &bFrostmourne!"
+                        CONSOLE: true
+                    }
+                ]
+            }
+        ]
+    }
+] 
